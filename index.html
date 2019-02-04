@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+<div id="firstdiv"> 
+  <img id="cargenIm"src="Images/CarGen_1.png"> 
+  <p id="parafDiv">BOARDROOM BOOKING SYSTEM</p> 
+</div>
+<div class="container" >
+  <form>
+    <div id="form"class="form-group col-6 ">
+        <label for="employeeID"> Employee ID</label>
+        <input type="text" class="form-control inputs " id="employeeID" placeholder="Enter your Employee ID" required>
+        <label for="boardroomID"> Select the BoardRoom</label>
+        <select class="form-control inputs" id="boardroomID" required>
+            <option>KILIMANJARO</option>
+            <option>KILIMAMBOGO</option>
+            <option>EVEREST</option>
+            <option>HIMALAYAS</option>
+        </select>
+        <label for="startDate"> Enter the StartDate/Time</label>
+        <input id="startDate" class="form-control inputs" type="date" required>
+        <label for="starTime">Enter the Start Time</label>
+        <input id="starTime" class="form-control inputs" type="time" required>
+        <label for="period"> Enter the period for Booking</label>
+        <input type="number" class="form-control inputs" id="period" required>
+        <button type="button" class="button btns" onclick="OnClick()">Submit</button>
+    </div>
+  </form>
+</div>
+<div class="result">
+  <p id="presult"></p>
+</div>
+</body>
+<script  type ="text/javascript" src="JS/main.js"></script>
+<script  type ="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+<script  type ="text/javascript" src="JS/bootstrap.min.js"></script>
+</html>
